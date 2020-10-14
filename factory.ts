@@ -6,7 +6,7 @@ interface Instrument {
     play(): void;
 }
 
-class Piano {
+class Piano implements Instrument {
     tune(): void {
         console.log('Afinando el piano');
     }
@@ -16,7 +16,7 @@ class Piano {
     }
 }
 
-class Violin {
+class Violin implements Instrument {
     tune(): void {
         console.log('Afinando el violín');
     }
